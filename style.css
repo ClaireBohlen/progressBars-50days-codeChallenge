@@ -3,19 +3,18 @@
 
 :root{
     --line-border-fill: #3498db;
-    --line-border-empty: 
+    --line-border-empty: #e0e0e0;
 }
 
 *{
     box-sizing: border-box;
 }
-
+/* comment */
 body{
     background-color: #f6f7fb;
     font-family: 'roboto'sans-serif;
     margin: 0;
     display: flex;
-    
     align-items:  center;
     justify-content: center;
     height: 100vh;
@@ -25,15 +24,15 @@ body{
     text-align: center;
 }
 .progress-container{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+    display: flex; /* Makes numbers into a row */
+    justify-content: space-between; /* Puts space between the numbers vs the end  */
+    position: relative; 
     margin-bottom: 30px;
     max-width: 100%;
     width:350px;
 }
-.progress-container:: before{
-    content: '';
+.progress-container::before {
+    content: ''; /* HAVE TO HAVE */
     background-color: #e0e0e0;
     position: absolute;
     top: 50%;
@@ -64,7 +63,7 @@ body{
     align-items: center;
     justify-content: center;
     border: 3px solid #e0e0e0;
-    transition: 4s ease;
+    transition: .4s ease;
 }
 
 .circle.active{
@@ -74,6 +73,7 @@ body{
 .btn{
     background-color: var(--line-border-fill);
     color: #fff;
+    border: 0;
     border-radius: 6px;
     cursor: pointer;
     font-family: inherit;
@@ -83,12 +83,13 @@ body{
 }
 
 .btn:active{
-    transform: scale(0.99);
+    transform: scale(0.98);
 
 }
 .btn:focus{
     outline: 0;
 }
 .btn:disabled{
-    background-color: ;
+    background-color:var(--line-border-empty) ;
+    cursor: not-allowed;
 }
