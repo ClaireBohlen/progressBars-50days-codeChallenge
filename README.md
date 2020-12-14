@@ -1,6 +1,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![MIT License][license-shield]][license-url]
-[![Portfolio][portfolio-shield]][lportfolio-url]
+[![Portfolio][portfolio-shield]][portfolio-url]
 <!-- See bottom of readme for badge information -->
 
 

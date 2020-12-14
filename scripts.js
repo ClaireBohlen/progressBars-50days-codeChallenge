@@ -55,11 +55,17 @@ function update(){
 
     //actives length divded  by circles length to get percentage. -1 and add percentage.
 
+
+    //check the current active is equal to one we want previous to be disabled
     if(currentActive === 1 ){
         prev.disabled = ture
+
+        //if its at the end we will disable the next button
     } else if (currentActive === circles.length){
         next.disabled = true
     } else {
+
+        //we dont want either disabled 
         prev.disabled = false
         next.disabled = false
     }
