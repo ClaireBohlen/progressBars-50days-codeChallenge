@@ -22,28 +22,30 @@ next.addEventListener('click', () =>{
 
     
 })
+//on click for back
+back.addEventListener('click', () => {
+    currentCircle -- //decrementing the current circle number by one
+    if (currentCircle < 1 ){ // if the current is less than one set the currentCircle to 1
+        currentCircle = 1
 
-   
+    }
+    //call update function
+    update()
+})
+//function to update line width
+function update (){
+    //loop though the circles and grab the index and the circle 
+    circles.forEach((circle, index) => {
+        //if the index index is less than the current circle add the active class 
+        if (index < currentCircle){
+            circle.classList.add('active')
+        } else {
+            circle.classList.remove('active')
+            //if the index is higher than the currect circle remove active class
+        }
+    })
     
 
-//on click for back
-
-back.addEventListener('click', () => {
-    currentCircle --
-    console.log(currentCircle)
-})
-
-    //call update function
-    //set params for back
-
-
-
-
-
-
-
-
-
-//function to update line width
+}
 
 //function to update circle outline
