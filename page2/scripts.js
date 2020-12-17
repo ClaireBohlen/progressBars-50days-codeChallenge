@@ -44,8 +44,31 @@ function update (){
             //if the index is higher than the currect circle remove active class
         }
     })
+
+    //get all the circles with the active class and declare them in a var
+
+    const actives = document.querySelectorAll('.active')
+
+    //determining the width of the line in our CSS file based on what circle increment
+
+    line.style.width = (actives.length -1) / (circles.length -1) * 100 + '%'
+
+    //if the current circle is the fist circle we want to disable the back button
+
+    if(currentCircle === 1){
+        back.disabled = true
+
+    } else if (currentCircle === circles.length){
+        next.disabled = true
+
+    } else {
+        back.disabled = false
+        next.disabled = false
+    }
     
 
 }
 
-//function to update circle outline
+
+
+
