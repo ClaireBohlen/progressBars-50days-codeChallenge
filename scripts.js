@@ -3,11 +3,12 @@ const progress = document.getElementById('progress')
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 const circles = document.querySelectorAll('.circle')
+//make sure to always do a dote if there are more than one
 
 // setting the current active to have a value of 1. Which ever progress step we are on. Think of this as an index
 let currentActive = 1
 
-// comment
+
 
 // next button is listening for a click and increment the current active by one
 next.addEventListener('click', () =>{
