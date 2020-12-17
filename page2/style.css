@@ -6,6 +6,7 @@
     --navy-1: #011627;
     --teal-1: #2EC4B6;
     --pink-1: #E71D36;
+    --gray-1: #e5e5e5;
 
 
 }
@@ -31,8 +32,27 @@ body{
 .bars-container{
     display: flex;
     justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 400px;
+    /* margin-right: 30px; */
     
+
 }
+.bars-container::before{
+    content:'';
+    background-color: var(--gray-1);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+
+}
+
 
  
 /* .bars-container{
