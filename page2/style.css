@@ -82,7 +82,27 @@ body{
 }
 .btn{
     background-color: var(--teal-1);
-    
+    color: var(--navy-1);
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    /* font-family: inherit; gets from perent */
+    padding: 8px 30px; 
+    margin: 5px;
+    font-size: 14px;
+
+
 }
+.btn:active{
+    transform: scale(0.98);
+
+}
+.btn:focus{
+    outline: 0;
+}
+.btn:disabled{
+    background-color: var(--gray-1);
+}
+
 
  
