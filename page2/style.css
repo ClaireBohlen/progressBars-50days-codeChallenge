@@ -40,7 +40,7 @@ body{
     
 
 }
-/* .bars-container::before{
+.bars-container::before{
     content:'';
     background-color: var(--gray-1);
     position: absolute;
@@ -51,7 +51,7 @@ body{
     width: 100%;
     z-index: -1;
 
-} */
+} 
 .line{
     background-color: var(--teal-1);
     position: absolute;
@@ -59,23 +59,30 @@ body{
     left: 0;
     transform: translateY(-50);
     height: 4px;
-    width: 50%;
+    width: 0%;
     z-index: -1;
     transition: 0.4s ease;
 }
-
-
- 
-/* .bars-container{
-    display: flex;
-    
-}
-.line{
-    
-}
 .circle{
+    background-color: var(--orange-1);
+    color: var(--navy-1);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--pink-1)  3px solid;
+    transition: 0.4s ease;
 
+
+}
+.circle.active{
+    border-color: var(--teal-1);
 }
 .btn{
+    background-color: var(--teal-1);
+    
+}
 
-}  */
+ 
