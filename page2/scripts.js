@@ -1,22 +1,21 @@
-var circles = document.querySelectorAll('circle')
-var back = document.getElementById('back')
-var next = document.getElementById('next')
-var line = document.getElementById('line')
+const circles = document.querySelectorAll('.circle')
+const back = document.getElementById('back')
+const next = document.getElementById('next')
+const line = document.getElementById('line')
 
 //global var for starting point
 
-var currentCircle = 1
+let currentCircle = 1
 
 //on click for next
 
 next.addEventListener('click', () =>{
-    currentCircle ++ // incrementing the current circle by one
-
-    //set params for max 
-    if (currentCircle > circles.length){ //if the current circle is higher than the total circles set the current circle to highest circle numner
+    currentCircle ++
+    if (currentCircle > circles.length){
         currentCircle = circles.length
-
     }
+    
+    
      //call update function
      update()
 
@@ -29,6 +28,7 @@ back.addEventListener('click', () => {
         currentCircle = 1
 
     }
+    console.log(currentCircle)
     //call update function
     update()
 })
